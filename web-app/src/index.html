@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Uno Game</title>
+    <link rel="stylesheet" href="./default.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Uno Game</h1>
+    </header>
+    <main id="container" class="container">
+      <section id="player-input">
+        <h2>Player Information</h2>
+        <div class="form-group">
+          <label for="player-name">Your Name:</label>
+          <input
+            type="text"
+            id="player-name"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="computer-players">Computer Players:</label>
+          <select id="computer-players">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </div>
+        <button id="start-button">Start Game</button>
+      </section>
+      <section id="the-game">
+        <div class="game-table">
+          <div class="deck" id="deck">
+            <h3 class="deck-title">Deck</h3>
+          </div>
+        </div>
+      </section>
+      <section id="controller">
+        Current player: <b id="current-player"></b> <br />
+        Current color: <b id="current-color"></b> <br /><br />
+        <button id="continue-button">Continue</button>
+      </section>
+      <section id="winner"></section>
+    </main>
+    <footer>
+      <p>&copy; 2023 Anastasia Cattaneo. All rights reserved.</p>
+    </footer>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
